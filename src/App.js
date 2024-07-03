@@ -73,9 +73,7 @@ function App() {
           className="button take-photo-button"
           onClick={() => {
             if (cameraRef.current) {
-              const photo = cameraRef.current.takePhoto({
-                quality: 1,
-              });
+              const photo = cameraRef.current.takePhoto();
               setImage(photo);
             }
           }}
